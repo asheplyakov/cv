@@ -1,0 +1,268 @@
+\documentclass{report}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\usepackage{savetrees}
+\usepackage{hyperref}
+
+\newcommand{\Obig}[1]{\ensuremath{\mathcal{O}(#1)}}
+\pdfminorversion 3%
+
+\author{Alexey A. Sheplyakov}
+\title{Alexey A. Sheplyakov. Curriculum vitae}
+\begin{document}
+\pagestyle{empty}
+\noindent{\bf Name:} Alexey A. Sheplyakov \\
+{\bf Contact info:} 
+  {\bf email:} \href{mailto:asheplyakov@yandex.ru}{asheplyakov@yandex.ru} %
+, {\bf phone:} +7 987 813 92 79 \\
+{\bf Date of birth:} 19 April, 1978 \\
+{\bf Place of birth:} Kharkov region, USSR \\
+{\bf Nationality:} Russian Federation \\
+{\bf Sex:} male \\
+{\bf Languages:} English (fluent), Russian (mother tongue), Ukrainian (mother tongue)
+
+\paragraph{Education}
+\begin{itemize}
+\item
+October 2001 -- October 2004: postgraduate student at
+\href{http://newuc.jinr.ru}{University Center} of
+\href{http://www.jinr.ru}{Joint Institute for Nuclear Research}
+\item
+September 1995 -- March 2001: graduate student at
+\href{http://www-htuni.univer.kharkov.ua/ftf/index.htm}{Department of Physics and Technology}
+of
+\href{http://www.univer.kharkov.ua/en}{V.N.~Karazin Kharkov National University}
+\end{itemize}
+
+\paragraph{Work experience}
+\begin{itemize}
+\item
+  {\bf September 2019 -- now:} go/C++ developer at \href{http://www.rainbowsoft.ru}{RainbowSoft}
+\item
+  {\bf November 2018 -- September 2019:} performance analyst at \href{http://epam.com}{EPAM}\\
+  Performance analysis and improvement of "low latency" code (software for capital markets).
+  Responsibilities:
+   \begin{itemize}
+      \item Designing benchmark scenarios based on real world products usage
+      \item Choosing relevant metrics and visualization
+      \item Writing load generators and other test applications, automating benchmarks
+      \item Identifying bottlenecks, improving the architecture and implementation
+      \item Tuning the OS (Linux) for low latency/soft real time applications
+   \end{itemize}
+
+  Projects:
+  \begin{itemize}
+    \item \href{https://www.b2bits.com/trading_solutions/fixedge.html}{FIXEdge}, application server providing
+          \href{https://en.wikipedia.org/wiki/Financial_Information_eXchange}{FIX} (Financial Information eXchange)
+          gateway to multiple protocols (various message queues, REST, etc). \\
+          Technologies: C++11, Berkeley sockets, boost, Python, ansible, CMake
+  \end{itemize}
+
+\item
+  {\bf May 2018 -- November 2018:} C developer at \href{http://www.basealt.ru}{BaseALT}\\
+  Responsibilities:
+  \begin{itemize}
+  \item Debugging, fixing, and improving Linux' client side AD (Active Directory)
+        integration software, such as \href{https://pagure.io/SSSD}{SSSD}
+  \item Automation of \href{http://www.samba.org}{Samba} based Active Directory
+	domains deployment
+  \end{itemize}
+\item
+  {\bf August 2017 -- May 2018:} performance analyst at \href{http://epam.com}{EPAM} \\
+\item 
+  {\bf August 2013 -- July 2017:} C++/C/Python developer at \href{https://www.mirantis.com}{Mirantis, Inc.} \\
+ Projects:
+ \begin{itemize}
+   \item \href{http://ceph.com}{Ceph}, a distributed object storage, block device,
+     and a POSIX filesystem. \\
+     Responsibilities:
+     \begin{itemize}
+       \item Debugging and bugfixing (examples:
+	  \href{https://github.com/ceph/ceph/commit/aba6746b850e9397ff25570f08d0af8847a7162c}{ceph bug \#14428},
+	  \href{https://github.com/ceph/ceph/commit/918c12c2ab5d014d0623b1accf959b041aac5128}{ceph bug \#12065},
+	  \href{https://github.com/ceph/ceph/commit/aab3a40f95dafab34a7eadc2159d142a5f0f88f1}{ceph bug \#14512})
+       \item Troubleshooting production Ceph clusters
+       \item Planning and deployment of Ceph clusters according to clients' workload and requirements
+     \end{itemize}
+     Technologies: C++11, boost, Python, ansible
+
+   \item
+   \href{https://www.mirantis.com/software/mirantis-openstack-software}{Mirantis OpenStack} \\
+  Responsibilities:
+  \begin{itemize}
+     \item
+       Debugging and fixing race conditions, data corruption, hardware specific,
+       and other "interesting" bugs
+       (\href{http://stackalytics.com/?release=all&company=mirantis&user_id=asheplyakov&metric=commits}{commits})
+     \item
+       Adjusting OpenStack components according to customers' requirements
+     \item
+       \href{http://stackalytics.com/?release=all&company=mirantis&user_id=asheplyakov&metric=marks}{Reviewing the code}
+  \end{itemize}
+  Technologies: Python, puppet, POSIX shell, ruby, GNU make
+  \end{itemize}
+
+\item
+  {\bf November 2012 -- August 2013}: C developer at
+  \href{http://www.adbglobal.com}{ADB Ukraine} \\
+  Project:
+  {Epicentro~Platform}, CPE (home router) firmware based on embedded Linux. \\
+  Responsibilities:
+  \begin{itemize}
+     \item Implementation of user space IPv6 related components (DHCPv6 server and client)
+     \item Bug fixing (mostly the userspace code)
+   \end{itemize}
+  Technologies: C, Berkeley sockets, Linux, IPv6
+
+\item {\bf April 2011 -- November 2012}: C++ team lead at
+  \href{http://p-product.com}{P-Product, Inc.}
+  Projects:
+  \begin{itemize}
+  \item
+    \href{http://www.ceva-dsp.com}{CEVA} profiler,
+    DSP (digital signal processor) profiler based on a simulator of
+    the target architecture, a part of
+    \href{http://www.ceva-dsp.com/products/tools/software/index.php}{CEVA IDE}
+    Responsibilities:
+    \begin{itemize}
+      \item Design and implementation of raw performance samples processing
+      \item Representation of the performance data in the GUI
+    \end{itemize}
+    Technologies: C++, Qt4 (in particular GraphicsScene framework), boost, SQLite
+
+  \item
+    \href{http://www.xmpie.com}{XMPie} uRender, video personalization solution.
+    Responsibilities:
+    \begin{itemize}
+      \item Design and implementation of H264 video streams stitching algorithm
+            (the key feature of the program)
+      \item Design and implementation of the GUI
+      \item Solving portability issues (the product runs on Mac OS X, Linux, and Windows)
+    \end{itemize}
+    Technologies: \href{http://ffmpeg.org}{libavcodec}, Qt4
+  \end{itemize}
+
+\item {\bf October 2010 -- April 2011:} software engineer at
+  \href{http://www.heliconsoft.com}{Helicon Soft Ltd.} \\
+  Project:
+  Helicon Remote 2.0, a program for semi-atomatic focus and exposure bracketing.\\
+  Responsibilities:
+     \begin{itemize}
+       \item Writing device (photo camera) communication code for Mac OS X and Linux
+       \item Design and implementation of GUI
+       \item Reverse engineering undocumented cameras' commands
+       \item Troubleshooting Mac OS X specific issues
+    \end{itemize}
+    Technologies: \href{http://www.libusb.org}{libusb}, libptp, Canon SDK, Qt4
+
+\item {\bf February 2010 -- July 2010:} software engineer at Quickoffice, Inc \\
+  Project: Qt4 port of Quickoffice mobile office suite  \\
+  Responsibilities:
+    \begin{itemize}
+      \item Rewriting Symbian specific code the Qt4 way
+      \item Debugging and fixing obscure bugs (like "widget gets mispositioned
+            after rotating the phone 3 times in a row")
+    \end{itemize}
+
+\item {\bf November 2008 -- January 2010:} software developer at
+  \href{http://www.metalika.ua}{Metalika Publishing House} \\
+  Project:
+    {\it Opus Metalicus} -- the program which powers the
+    \href{http://www.metalika.ua/metallicheskii-vestnik.html}{``Metallicheskiy Vestnik''}
+    magazine. \\
+    Responsibilities:
+    \begin{itemize}
+      \item Design and implementation of the database schema, triggers, views
+      \item Design and implementation of the GUI
+      \item Deployment, administration, and support of the software
+    \end{itemize}
+    Technologies: Qt4, PostgreSQL
+
+\item {\bf November 2004 -- November 2008:} research fellow at
+  \href{http://theor.jinr.ru}{Bogoliubov Laboratory of Theoretical Physics}. \\
+  Supervisor: professor~%
+  \href{http://theor.jinr.ru/~kazakovd}{D.I. Kazakov} \\
+  \paragraph{Research topics}
+    \begin{itemize}
+      \item Phenomenology of the Standard Model of elementary particles
+	      and its minimal supersymmetric extension
+      \item Application of computer algebra to calculations in perturbative
+            quantum field theory, in particular computation of Feynman integrals
+	    with several mass scales 
+    \end{itemize}
+
+   \paragraph{Publications}
+    \begin{itemize}
+      \item
+        A. Bednyakov, D.I. Kazakov, A. Sheplyakov,
+        ``On the 2-loop $\Obig{\alpha_s^2}$ corrections to the pole mass of the t
+          quark in the MSSM.''
+        Physics of Atomic Nuclei, 71:343-350,2008.
+        (preprint: \href{http://arxiv.org/abs/hep-ph/0507139}{hep-ph/0507139})
+      \item
+        M.Yu. Kalmykov and A. Sheplyakov,
+	``lsjk -- a C++ library for arbitrary-precision numeric evaluation of
+          the generalized log-sine functions.''
+        Comput.Phys.Commun. 172 (2005) 45-59.
+	(preprint: \href{http://arxiv.org/abs/hep-ph/0411100}{hep-ph/0411100})
+      \item
+        A. Bednyakov and A. Sheplyakov,
+	``Two-loop $\Obig{\alpha_s y^2}$ and $\Obig{y^4}$ MSSM corrections to
+	  the pole mass of the $b$-quark.''
+        Physics Letters B, 604:91-97,2004.
+        (preprint: \href{http://arxiv.org/abs/hep-ph/0410128}{hep-ph/0410128})
+    \end{itemize}
+
+  \paragraph{Talks}
+    \begin{itemize}
+      \item
+        The 15th International Conference on Supersymmetry and the Unification
+	of Fundamental Interactions
+	(\href{http://susy07.uni-karlsruhe.de}{SUSY07}), Karlsruhe, Germany,
+	July 26 - August 1, 2007 \\
+	Subject: ffmssmsc -- a C++ library for superpartner mass calculation and
+	renormalization group analysis of the MSSM
+        (\href{http://indico.cern.ch/contributionDisplay.py?contribId=419&sessionId=236&confId=6210}{slides})
+      \item
+        International school-workshop ``Calculations for modern and future colliders''
+	(\href{http://theor.jinr.ru/~calc2006}{CALC-2006}),
+	Dubna, Russia, July 15-25, 2006 \\
+	Subject: Different two-loop correction to the mass of heavy quarks in the MSSM
+	(\href{http://theor.jinr.ru/~calc2006/Talks/sheplyakov_cal06.pdf}{slides})
+    \end{itemize}
+\end{itemize}
+
+\paragraph{Programming languages}
+\begin{itemize}
+\item
+Primary (being used in everyday work): {\rm C++}, {\rm C}, Python,
+\href{http://en.wikipedia.org/wiki/Bourne_shell}{Bourne shell}, SQL
+\item
+Others (used only occasionally):
+Assembler (x86), ruby,
+\href{http://en.wikipedia.org/wiki/Scheme_(programming_language)}{Scheme}
+(mostly \href{http://www.gnu.org/software/guile}{guile})
+\end{itemize}
+
+\paragraph{Operating systems: }
+Linux (primary OS since Oct. 1996), Mac OS X
+
+\paragraph{Degrees}
+M.Sc., March 2001 \\
+	Supervisor: assistant professor
+\href{http://www.slac.stanford.edu/spires/find/hep/www?rawcmd=FIND+A+ZIMA%2CV.G.&FORMAT=www&SEQUENCE=ds%28d%29}{\underline{V.G.~Zima}} \\
+	Diploma thesis title: BFV-BRST quantization of free massless
+	arbitrary spin particle.
+
+\paragraph{Hobbies}
+\begin{itemize}
+\item Phenomenology the Standard Model and its supersymmetric extensions.
+\item Calculation of Feynman integrals with several mass scales.
+\item Application of computer algebra to calculations in perturbative quantum field theory.
+\item Non-perturbative quantum field theory.
+\item \href{http://www.ginac.de}{GiNaC}, a special purpose C++ library for
+  symbolic computations.
+\end{itemize}
+
+\end{document}
+
